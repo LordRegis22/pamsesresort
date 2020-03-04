@@ -1,0 +1,19 @@
+import React from "react";
+import Hero from "../components/Hero";
+import Banner from "../components/Banner";
+import { Link } from "react-router-dom";
+
+export default function Home() {
+  return (
+    <Hero>
+      <Banner
+        title="Luxurious Pamses Signature Rooms"
+        subtitle="Deluxe Pamses rooms styled by the paws of Pamses himself -- starting at $299"
+      >
+        <Link to="/rooms" className="btn-primary">
+          Our Rooms
+        </Link>
+      </Banner>
+    </Hero>
+  );
+}
