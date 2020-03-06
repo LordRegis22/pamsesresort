@@ -27,8 +27,14 @@ function RoomProvider(props) {
     });
     return tempItems;
   }
+
+  function getRoom(slug) {
+    let tempRooms = [...roomState.rooms];
+    const room = tempRooms.find(room => room.slug === slug);
+    return room;
+  }
   return (
-    <RoomContext.Provider value={{ roomState }}>
+    <RoomContext.Provider value={{ roomState, getRoom: getRoom }}>
       {props.children}
     </RoomContext.Provider>
   );
