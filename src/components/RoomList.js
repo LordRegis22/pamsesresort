@@ -9,9 +9,10 @@ export default function RoomList({ rooms }) {
       </div>
     );
   }
+  console.log(rooms);
   return (
     <div className="roomslist">
-      <div className="roomlist-center">
+      <div className="roomslist-center">
         {rooms.map(item => {
           return <Room key={item.id} room={item} />;
         })}
