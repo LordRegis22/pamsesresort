@@ -19,7 +19,7 @@ export default function RoomFilter({ rooms }) {
     breakfast,
     pets
   } = context;
-  const { handleChange, getRoom } = context;
+  const { handleChange } = context;
   //   get unique types
   let types = getUnique(rooms, "type");
   //   add all
