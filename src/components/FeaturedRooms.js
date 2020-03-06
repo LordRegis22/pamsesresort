@@ -5,8 +5,8 @@ import Room from "./Room";
 import Title from "./Title";
 
 export default function FeaturedRooms() {
-  let rooms = useContext(RoomContext).roomState.featuredRooms;
-  let loading = useContext(RoomContext).roomState.loading;
+  let rooms = useContext(RoomContext).featuredRooms;
+  let loading = useContext(RoomContext).loading;
   return (
     <section className="featured-rooms">
       <Title title="Featured Rooms" />
